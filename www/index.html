@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Bluetooth Project</title>
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/foundation.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/libs/jquery/jquery-2.0.0.min.js"></script>
+    <script src="js/libs/underscore/underscore-min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="cordova.js"></script>
+
+</head>
+
+    <body onload="app.initialize();">
+
+        <script type="text/template" class="device">
+
+            <table role="grid">
+                <thead>
+
+                <tr>
+                    <th scope="column">Name</th>
+                    <th scope="column">MAC</th>
+                    <th scope="column">Ações</th>
+                </tr>
+
+                </thead>
+
+                <tbody>
+                <%  _.each(app.devices, function(d, i) { %>
+                <tr>
+                    <td>#<%- d.deviceName %>.</td>
+                    <td><%- d.deviceAddress %></td>
+                    <td style="text-align:right;">
+                        <a href="#" class="tiny button" onclick="app.connectToDevice('<%- d.deviceAddress %>');">Connect</a>
+                    </td>
+
+                </tr>
+                <% }); %>
+                </tbody>
+
+            </table>
+
+        </script>
+
+        <section id="devices">
+            <table role="grid">
+                <thead>
+
+                <tr>
+                    <th scope="column">Name</th>
+                    <th scope="column">MAC</th>
+                    <th scope="column">Ações</th>
+                </tr>
+
+                </thead>
+
+                <tbody>
+                </tbody>
+
+            </table>
+        </section>
+
+        <br />
+        <img id="loading" src="images/ajax-loader.gif" style="display: none;">
+
+    </body>
+
+</html>
