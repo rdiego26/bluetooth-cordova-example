@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+}
+
+#loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
