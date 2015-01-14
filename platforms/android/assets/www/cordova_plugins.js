@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.evothings.ble/ble.js",
-        "id": "com.evothings.ble.BLE",
-        "clobbers": [
-            "evothings.ble"
-        ]
-    },
-    {
         "file": "plugins/org.bcsphere.bluetooth/www/org.underscorejs.underscore/underscore.js",
         "id": "org.bcsphere.bluetooth.underscorejs.underscore"
     },
@@ -110,7 +103,6 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.evothings.ble": "0.0.1",
     "org.bcsphere.bluetooth": "0.5.1"
 }
 // BOTTOM OF METADATA
