@@ -38,7 +38,6 @@
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/cordova.js \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/images/ajax-loader.gif \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth \
-/home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/com.evothings.ble \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www/org.bcsphere.bluetooth \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www/org.underscorejs.underscore \
@@ -61,7 +60,6 @@
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www/org.bluetooth.profile/proximity.js \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www/org.bluetooth.profile/find_me.js \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/org.bcsphere.bluetooth/www/org.bluetooth.profile/serial_port.js \
-/home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/plugins/com.evothings.ble/ble.js \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/js/foundation.min.js \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/js/vendor \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/js/libs \
@@ -86,4 +84,5 @@
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/css/normalize.css \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/css/foundation.css \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/css/foundation.min.css \
+/home/ramos/Projetos/bluetooth-cordova-example/platforms/android/assets/www/css/app.css \
 /home/ramos/Projetos/bluetooth-cordova-example/platforms/android/ant-build/AndroidManifest.xml \

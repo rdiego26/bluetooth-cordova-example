@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 # Webstorm folder
-.idea
+.idea/
 
 # ant-build folder
-ant-build
+ant-build/

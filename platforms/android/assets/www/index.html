@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/foundation.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
 
     <script src="js/libs/jquery/jquery-2.0.0.min.js"></script>
     <script src="js/libs/underscore/underscore-min.js"></script>
@@ -42,7 +43,7 @@
                     <td>#<%- d.deviceName %>.</td>
                     <td><%- d.deviceAddress %></td>
                     <td style="text-align:right;">
-                        <a href="#" class="tiny button" onclick="app.connectToDevice('<%- d.deviceAddress %>');">Connect</a>
+                        <a href="#" class="tiny button" onclick="app.connectToDevice('<%- d.deviceAddress %>');">Pair</a>
                     </td>
 
                 </tr>

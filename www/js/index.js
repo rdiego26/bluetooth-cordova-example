@@ -10,12 +10,28 @@ var app = {
 
     scanDevices: function() {
 
-        $("#loading").fadeIn('slow');
-        console.debug('Scanning devices...');
-        BC.Bluetooth.StartScan();
+        if(!BC.bluetooth.isopen) {
+            BC.Bluetooth.OpenBluetooth(
+                function(success) {
+                    console.debug('Turning on bluetooth...ok');
+                    $("#loading").fadeIn('slow');
+                    console.debug('Scanning devices...');
+                    BC.Bluetooth.StartScan();
 
-        //Update UI
-        setTimeout( app.showDevices , 10000);
+                    //Update UI
+                    setTimeout( app.showDevices , 10000);
+                },
+                function(error){ alert('Failed to turn on Bluetooth!');}
+            );
+        } else {
+            $("#loading").fadeIn('slow');
+            console.debug('Scanning devices...');
+            BC.Bluetooth.StartScan();
+
+            //Update UI
+            setTimeout( app.showDevices , 10000);
+        }
+
     },
 
     //TODO use underscore template
@@ -41,7 +57,22 @@ var app = {
     },
 
     connectToDevice: function(_macDevice) {
-        console.debug('Attempting connect to ' + _macDevice);
+
+        var _device = window.device = BC.bluetooth.devices[_macDevice];
+
+        console.debug('Attempting pair to ' + _macDevice);
+
+        if( _device ) {
+            _device.createPairSuccess = function(success) {
+                console.debug('Pair Success!');
+            };
+            _device.createPairError = function(error) {
+                console.debug('Pair Error!');
+            };
+            BC.bluetooth.createPair(_device);
+        } else {
+            alert('Error!');
+        }
 
 
     }
